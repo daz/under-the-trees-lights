@@ -1,9 +1,9 @@
 #include <FastLED.h>
 
-#if defined ESP8266_WEMOS_D1MINI
-#define LED_PIN     D3
-#elif defined ARDUINO_ESP8266_ESP01
+#if defined ARDUINO_ESP8266_ESP01
 #define LED_PIN     2
+#else
+#define LED_PIN     D3
 #endif
 
 #define NUM_LEDS    147
